@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Store Locator | Dr Pepper Concept</title>
+    <meta name="description" content="Find Dr Pepper near you — location-based sorting with a global demo dataset." />
+    <link rel="canonical" href="https://example.com/store-locator.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+  </head>
+  <body class="h-full" data-page="store">
+    <div id="site-header"></div>
+    <main id="main-content" class="pb-20">
+      <div class="container-narrow pt-10">
+        <h1 class="section-title">Find it fast</h1>
+        <p class="mt-4 max-w-2xl text-brand-muted">
+          Location-based store finder (demo): grants browser geolocation when allowed, otherwise shows featured retailers across US,
+          EU, and Asia.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button type="button" id="store-near-me" class="btn-primary">Use my location</button>
+          <a href="products.html" class="btn-secondary">Browse flavors first</a>
+        </div>
+        <p id="store-status" class="mt-4 text-sm text-brand-muted" role="status"></p>
+        <ul id="store-results" class="mt-10 space-y-4" role="list"></ul>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr Pepper | Bold Flavor. Zero Apologies. — Concept Experience</title>
+    <meta
+      name="description"
+      content="Discover Dr Pepper flavors, limited drops, and find a store near you. A premium, mobile-first concept experience."
+    />
+    <meta name="theme-color" content="#5C0A14" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr Pepper | Bold Flavor. Zero Apologies." />
+    <meta
+      property="og:description"
+      content="23 flavors. One obsession. Explore flavors, perks, and the story behind the fizz."
+    />
+    <meta property="og:image" content="https://example.com/og-image.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dr Pepper Concept",
+        "url": "https://example.com",
+        "description": "Concept brand experience for Dr Pepper — not affiliated with trademark owner."
+      }
+    </script>
+  </head>
+  <body class="h-full" data-page="home">
+    <div id="site-header"></div>
+
+    <main id="main-content">
+      <section
+        class="relative min-h-[88vh] overflow-hidden border-b border-black/5 dark:border-white/10"
+        aria-label="Hero"
+        id="ab-hero-root"
+      >
+        <div class="absolute inset-0 bg-hero-mesh hero-animated-bg" aria-hidden="true"></div>
+        <div class="absolute inset-0 metallic-shimmer opacity-40" aria-hidden="true"></div>
+        <div class="relative container-narrow flex flex-col justify-center gap-10 py-24 md:min-h-[88vh] md:py-32">
+          <div id="hero-variant-a" class="hidden max-w-3xl" data-hero-lines>
+            <p class="hero-line text-sm font-semibold uppercase tracking-[0.3em] text-brand-metallic-light">
+              A/B: Variant A · Mystery meets momentum
+            </p>
+            <h1 class="hero-line section-title mt-4 text-white drop-shadow-lg">
+              Taste the plot twist.
+            </h1>
+            <p class="hero-line mt-6 max-w-xl text-lg text-white/90 md:text-xl">
+              23 iconic flavors in every sip — built for nights that run long and playlists that hit harder.
+            </p>
+          </div>
+          <div id="hero-variant-b" class="hidden max-w-3xl" data-hero-lines>
+            <p class="hero-line text-sm font-semibold uppercase tracking-[0.3em] text-brand-metallic-light">
+              A/B: Variant B · Proof in the pour
+            </p>
+            <h1 class="hero-line section-title mt-4 text-white drop-shadow-lg">Fuel your flavor streak.</h1>
+            <p class="hero-line mt-6 max-w-xl text-lg text-white/90 md:text-xl">
+              Premium fizz, loud personality, and a finish that keeps you coming back — worldwide, mobile-first, zero fluff.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center" data-reveal>
+            <a href="store-locator.html" class="btn-primary bg-white text-brand-burgundy hover:bg-brand-cream dark:bg-brand-cream dark:text-brand-ink"
+              >Try it now — find near you</a
+            >
+            <a href="products.html" class="btn-secondary border-white text-white hover:bg-white hover:text-brand-ink"
+              >Explore flavors</a
+            >
+            <p class="text-xs text-white/70 sm:ml-2" data-ab-hint>Bucket stored locally for consistent A/B assignment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-narrow py-16 md:py-24" aria-labelledby="proof-heading" data-reveal>
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 id="proof-heading" class="section-title text-brand-burgundy dark:text-brand-cream">Loved loud.</h2>
+            <p class="mt-3 max-w-xl text-brand-muted">Social proof that converts scrollers into sippers.</p>
+          </div>
+          <div class="rounded-2xl bg-brand-burgundy px-4 py-2 text-center text-sm font-semibold text-white shadow-card">
+            <span class="text-brand-metallic-light">Only today:</span> Limited bundles at participating retailers (demo).
+          </div>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <figure class="card-elevated">
+            <blockquote class="text-lg font-medium text-brand-ink dark:text-brand-cream">
+              “Complex like the game meta — sweet upfront, spicy mid, clutch finish.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-brand-muted">Mina · Valorant · US</figcaption>
+          </figure>
+          <figure class="card-elevated">
+            <blockquote class="text-lg font-medium text-brand-ink dark:text-brand-cream">
+              “Cherry edition is my studio break fuel. No crash, all vibe.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-brand-muted">Leo · Producer · UK</figcaption>
+          </figure>
+          <figure class="card-elevated">
+            <blockquote class="text-lg font-medium text-brand-ink dark:text-brand-cream">
+              “Zero sugar slaps with spicy food. Official late-night pairing.”
+            </blockquote>
+            <figcaption class="mt-4 text-sm text-brand-muted">Aya · Food creator · JP</figcaption>
+          </figure>
+        </div>
+        <div id="social-feed" class="mt-8 grid gap-4 md:grid-cols-3" aria-label="Social highlights"></div>
+      </section>
+
+      <section class="border-y border-black/5 bg-white/60 py-16 dark:border-white/10 dark:bg-brand-burgundy-deep/40 md:py-24" data-reveal>
+        <div class="container-narrow">
+          <div class="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+            <div>
+              <h2 class="section-title">Featured flavors</h2>
+              <p class="mt-2 text-brand-muted">Interactive cards · hover lift · fast checkout paths.</p>
+            </div>
+            <a href="products.html" class="btn-secondary">Shop all</a>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <article
+              data-product-card
+              class="card-elevated group relative overflow-hidden bg-gradient-to-br from-amber-900/20 to-brand-burgundy/30"
+            >
+              <div class="relative z-10 flex min-h-[200px] flex-col justify-between gap-4">
+                <div>
+                  <h3 class="font-display text-2xl uppercase text-white">Original</h3>
+                  <p class="text-sm text-white/80">The legend — layered, mysterious, always on.</p>
+                </div>
+                <div class="flex gap-2">
+                  <a href="product-detail.html?sku=original" class="btn-primary bg-white text-xs text-brand-burgundy hover:bg-brand-cream">Buy now</a>
+                  <a href="store-locator.html" class="btn-secondary border-white text-xs text-white">Find store</a>
+                </div>
+              </div>
+            </article>
+            <article
+              data-product-card
+              class="card-elevated group relative overflow-hidden bg-gradient-to-br from-slate-800/50 to-brand-burgundy-deep/50"
+            >
+              <div class="relative z-10 flex min-h-[200px] flex-col justify-between gap-4">
+                <div>
+                  <h3 class="font-display text-2xl uppercase text-white">Zero Sugar</h3>
+                  <p class="text-sm text-white/80">Big flavor. Zero sugar. All-night sessions.</p>
+                </div>
+                <div class="flex gap-2">
+                  <a href="product-detail.html?sku=dr-pepper-zero" class="btn-primary bg-white text-xs text-brand-burgundy hover:bg-brand-cream">Buy now</a>
+                  <a href="store-locator.html" class="btn-secondary border-white text-xs text-white">Find store</a>
+                </div>
+              </div>
+            </article>
+            <article
+              data-product-card
+              class="card-elevated group relative overflow-hidden bg-gradient-to-br from-rose-900/40 to-brand-crimson/40"
+            >
+              <div class="relative z-10 flex min-h-[200px] flex-col justify-between gap-4">
+                <div>
+                  <span class="rounded-full bg-brand-metallic px-2 py-0.5 text-xs font-bold text-brand-ink">Limited</span>
+                  <h3 class="mt-2 font-display text-2xl uppercase text-white">Strawberries &amp; Cream</h3>
+                  <p class="text-sm text-white/80">Scarcity signal — when it’s gone, it’s gone.</p>
+                </div>
+                <div class="flex gap-2">
+                  <a href="product-detail.html?sku=strawberries-cream" class="btn-primary bg-white text-xs text-brand-burgundy hover:bg-brand-cream">Buy now</a>
+                  <a href="products.html" class="btn-secondary border-white text-xs text-white">More drops</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-narrow py-16 md:py-24" aria-labelledby="engage-heading">
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div data-reveal>
+            <h2 id="engage-heading" class="section-title">Spin the perk wheel</h2>
+            <p class="mt-3 text-brand-muted">Gamified reward surface — builds micro-commitment before email capture.</p>
+            <div class="mt-8 flex flex-col items-center gap-6 md:flex-row md:items-start">
+              <div class="relative h-48 w-48 shrink-0">
+                <svg
+                  id="perks-wheel"
+                  class="h-full w-full drop-shadow-glow"
+                  viewBox="0 0 200 200"
+                  role="img"
+                  aria-label="Prize wheel"
+                >
+                  <g transform="translate(100,100)">
+                    <path d="M0-90 L52-74 A90 90 0 0 1 52 74 Z" fill="#6B0F1A" />
+                    <path d="M52-74 L85-44 A90 90 0 0 1 0 90 Z" fill="#8B1423" />
+                    <path d="M0 90 L-85-44 A90 90 0 0 1 0-90 Z" fill="#5C0A14" />
+                    <path d="M-85-44 L-52-74 A90 90 0 0 1 52-74 Z" fill="#3D060E" />
+                    <circle r="16" fill="#C9A962" />
+                  </g>
+                </svg>
+                <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+                  <span class="text-2xl" aria-hidden="true">◆</span>
+                </div>
+              </div>
+              <div>
+                <button type="button" id="spin-wheel-btn" class="btn-primary">Spin</button>
+                <p id="wheel-prize" class="mt-4 text-sm font-medium text-brand-ink dark:text-brand-cream" aria-live="polite">
+                  Hit spin — unlock a demo perk.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-elevated" id="flavor-quiz" data-reveal>
+            <h3 class="font-display text-3xl uppercase text-brand-burgundy dark:text-brand-cream">What’s your flavor?</h3>
+            <p class="mt-2 text-sm text-brand-muted">AI-style matcher — rule-based scores tuned for speed &amp; fun.</p>
+            <div class="mt-6">
+              <div data-quiz-step>
+                <p class="text-lg font-semibold" data-quiz-q></p>
+                <div class="mt-4 grid gap-2 sm:grid-cols-2" data-quiz-options></div>
+              </div>
+              <div class="mt-6 hidden" data-quiz-result>
+                <p class="text-sm text-brand-muted">We’d steer you toward:</p>
+                <p class="mt-2 font-display text-2xl uppercase text-brand-burgundy dark:text-brand-metallic-light" data-result-name></p>
+                <a data-result-link href="#" class="btn-primary mt-4 inline-flex">View product</a>
+                <button type="button" data-quiz-restart class="btn-ghost mt-2 block text-sm">Start over</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-black/5 bg-gradient-to-br from-brand-cream to-white py-16 dark:border-white/10 dark:from-brand-ink dark:to-brand-burgundy-deep md:py-24" data-reveal>
+        <div class="container-narrow grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h2 class="section-title">Get insider perks</h2>
+            <p class="mt-3 text-brand-muted">
+              Offer: launch alerts + wallpapers + drops — minimal fields for maximum completion rate.
+            </p>
+            <ul class="mt-6 space-y-2 text-sm text-brand-ink dark:text-brand-cream">
+              <li class="flex gap-2"><span aria-hidden="true">✓</span> Early access to limited editions</li>
+              <li class="flex gap-2"><span aria-hidden="true">✓</span> Region-aware suggestions (store locator)</li>
+              <li class="flex gap-2"><span aria-hidden="true">✓</span> One-tap unsubscribe any time</li>
+            </ul>
+          </div>
+          <form id="home-email-form" class="card-elevated" novalidate>
+            <label for="home-email" class="text-sm font-medium text-brand-ink dark:text-brand-cream">Email</label>
+            <input
+              id="home-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="you@domain.com"
+              class="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-brand-ink shadow-inner focus:border-brand-metallic focus:outline-none focus:ring-2 focus:ring-brand-metallic dark:border-white/10 dark:bg-brand-ink dark:text-brand-cream"
+            />
+            <p class="mt-3 text-xs text-brand-muted">By joining you agree to demo terms — no real marketing sends.</p>
+            <button type="submit" class="btn-primary mt-4 w-full">Unlock perks</button>
+            <p class="mt-3 hidden text-sm font-medium text-green-700 dark:text-green-400" data-form-status role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="container-narrow py-20 text-center" data-reveal>
+        <h2 class="font-display text-4xl uppercase text-brand-burgundy dark:text-brand-cream md:text-5xl">Still scrolling?</h2>
+        <p class="mx-auto mt-4 max-w-lg text-brand-muted">Strong closing CTA — urgency + locality.</p>
+        <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="store-locator.html" class="btn-primary px-10 py-4 text-base">Find a store — tonight</a>
+          <a href="newsletter.html" class="btn-secondary px-10 py-4 text-base">Claim perks</a>
+        </div>
+        <p class="mt-6 text-xs text-brand-muted">Last chance: rotating bundles refresh at midnight local (demo).</p>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

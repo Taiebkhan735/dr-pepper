@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-brand-cream text-brand-ink antialiased dark:bg-brand-ink dark:text-brand-cream;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-metallic;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-burgundy px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-card transition hover:bg-brand-crimson hover:shadow-glow focus-visible:ring-2 focus-visible:ring-brand-metallic dark:bg-brand-crimson dark:hover:bg-brand-rose;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-brand-burgundy bg-transparent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-brand-burgundy transition hover:bg-brand-burgundy hover:text-white dark:border-brand-cream dark:text-brand-cream dark:hover:bg-brand-cream dark:hover:text-brand-ink;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium text-brand-muted transition hover:text-brand-burgundy dark:hover:text-brand-metallic-light;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply font-display text-4xl uppercase tracking-tight text-brand-burgundy dark:text-brand-cream sm:text-5xl md:text-6xl;
+  }
+
+  .card-elevated {
+    @apply rounded-2xl border border-black/5 bg-white/80 p-6 shadow-card backdrop-blur dark:border-white/10 dark:bg-brand-burgundy-deep/80;
+  }
+}
+
+/* Hero animated gradient (lightweight "video" alternative) */
+@keyframes hero-shift {
+  0%,
+  100% {
+    transform: scale(1.05) translate(0, 0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.12) translate(-2%, 1%);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.hero-animated-bg {
+  animation: hero-shift 18s ease-in-out infinite;
+}
+
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(30px);
+  opacity: 0.45;
+}
+
+.glass-pill {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur;
+}
+
+.card-hover {
+  @apply transition duration-400 hover:-translate-y-1 hover:shadow-glow;
+}
+
+.gradient-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(139, 20, 35, 0) 0%,
+    rgba(139, 20, 35, 0.55) 50%,
+    rgba(139, 20, 35, 0) 100%
+  );
+}
+
+#perks-wheel {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.metallic-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(201, 169, 98, 0) 0%,
+    rgba(201, 169, 98, 0.5) 50%,
+    rgba(201, 169, 98, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+/* Spin wheel */
+.wheel-segment {
+  transform-origin: center;
+}

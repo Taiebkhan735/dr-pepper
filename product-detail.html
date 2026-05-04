@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product | Dr Pepper Concept</title>
+    <meta name="description" content="Flavor notes, nutrition highlights, reviews, and related flavors — concept PDP optimized for mobile checkout paths." />
+    <link rel="canonical" href="https://example.com/product-detail.html" />
+    <meta property="og:title" content="Dr Pepper | Product detail (concept)" />
+    <meta property="og:type" content="product" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Dr Pepper — Concept PDP",
+        "description": "Soft drink product detail page (concept)",
+        "brand": { "@type": "Brand", "name": "Dr Pepper" },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "USD",
+          "price": "1.99"
+        }
+      }
+    </script>
+  </head>
+  <body class="h-full" data-page="product-detail">
+    <div id="site-header"></div>
+    <main id="main-content">
+      <div class="container-narrow py-10 md:py-16">
+        <nav class="text-sm text-brand-muted" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-brand-burgundy dark:hover:text-brand-cream">Home</a>
+          <span aria-hidden="true"> / </span>
+          <a href="products.html" class="hover:text-brand-burgundy dark:hover:text-brand-cream">Products</a>
+          <span aria-hidden="true"> / </span>
+          <span class="text-brand-ink dark:text-brand-cream" data-pd-title>Dr Pepper</span>
+        </nav>
+
+        <div class="mt-8 grid gap-12 lg:grid-cols-2">
+          <div class="relative">
+            <div
+              class="aspect-[3/4] overflow-hidden rounded-3xl border border-black/5 bg-gradient-to-br from-amber-900/30 to-brand-burgundy/50 shadow-glow dark:border-white/10"
+              role="img"
+              aria-label="Stylized 3D can visual"
+            >
+              <div class="absolute inset-0 bg-can-shine" aria-hidden="true"></div>
+              <div class="flex h-full flex-col justify-between p-8 text-white">
+                <span class="hidden rounded-full bg-brand-metallic px-3 py-1 text-xs font-bold uppercase text-brand-ink" data-pd-limited
+                  >Limited edition</span
+                >
+                <div class="mt-auto">
+                  <p class="font-display text-5xl uppercase leading-none drop-shadow-md" data-pd-title>Dr Pepper</p>
+                  <p class="mt-2 text-sm text-white/80" data-pd-tagline>23 flavors. One legend.</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs text-brand-muted">
+              High-impact visual panel — swap for WebP packshots in production. Lazy-load below the fold assets.
+            </p>
+          </div>
+
+          <div>
+            <h1 class="font-display text-4xl uppercase text-brand-burgundy dark:text-brand-cream md:text-5xl" data-pd-title>
+              Dr Pepper Original
+            </h1>
+            <p class="mt-2 text-xl text-brand-muted" data-pd-tagline>23 flavors. One legend.</p>
+            <p class="mt-6 text-brand-ink dark:text-brand-cream" data-pd-desc></p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="store-locator.html" class="btn-primary">Add to cart — find retailer</a>
+              <a href="products.html" class="btn-secondary">More flavors</a>
+            </div>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="card-elevated py-4 text-center">
+                <p class="text-xs uppercase text-brand-muted">Calories</p>
+                <p class="mt-1 text-2xl font-bold text-brand-ink dark:text-brand-cream" data-pd-cal>150</p>
+                <p class="text-xs text-brand-muted">per 12 fl oz (demo)</p>
+              </div>
+              <div class="card-elevated py-4 text-center">
+                <p class="text-xs uppercase text-brand-muted">Total sugars</p>
+                <p class="mt-1 text-2xl font-bold text-brand-ink dark:text-brand-cream" data-pd-sugar>39g</p>
+              </div>
+              <div class="card-elevated py-4 text-center">
+                <p class="text-xs uppercase text-brand-muted">Caffeine</p>
+                <p class="mt-1 text-sm font-semibold text-brand-ink dark:text-brand-cream" data-pd-caf>41mg</p>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <h2 class="font-display text-2xl uppercase text-brand-burgundy dark:text-brand-cream">Sensory notes</h2>
+              <ul class="mt-4 space-y-2 text-brand-ink dark:text-brand-cream" data-pd-notes></ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="mt-20 border-t border-black/5 pt-12 dark:border-white/10" aria-labelledby="reviews-heading">
+          <h2 id="reviews-heading" class="font-display text-3xl uppercase text-brand-burgundy dark:text-brand-cream">Reviews</h2>
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <article class="card-elevated">
+              <p class="text-sm font-semibold text-brand-ink dark:text-brand-cream">★★★★★ “Signature spice”</p>
+              <p class="mt-2 text-sm text-brand-muted">Depth for days — not a one-note cola. Great ice cold.</p>
+            </article>
+            <article class="card-elevated">
+              <p class="text-sm font-semibold text-brand-ink dark:text-brand-cream">★★★★☆ “Bold with food”</p>
+              <p class="mt-2 text-sm text-brand-muted">Pairs with burgers and late-night snack runs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mt-16" aria-labelledby="related-heading">
+          <h2 id="related-heading" class="font-display text-3xl uppercase text-brand-burgundy dark:text-brand-cream">You might also love</h2>
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <a href="product-detail.html?sku=dr-pepper-zero" class="card-elevated block hover:shadow-glow">
+              <h3 class="font-display text-xl uppercase">Zero Sugar</h3>
+              <p class="mt-2 text-sm text-brand-muted">Same swagger, zero sugar.</p>
+            </a>
+            <a href="product-detail.html?sku=cherry" class="card-elevated block hover:shadow-glow">
+              <h3 class="font-display text-xl uppercase">Cherry</h3>
+              <p class="mt-2 text-sm text-brand-muted">Juicy lift + signature depth.</p>
+            </a>
+            <a href="product-detail.html?sku=cream-soda" class="card-elevated block hover:shadow-glow">
+              <h3 class="font-display text-xl uppercase">Cream Soda</h3>
+              <p class="mt-2 text-sm text-brand-muted">Dessert-nostalgic twist.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products | All Flavors — Dr Pepper Concept</title>
+    <meta name="description" content="Explore every Dr Pepper flavor and variant in this concept catalog — Original, Zero, Cherry, limited drops, and more." />
+    <link rel="canonical" href="https://example.com/products.html" />
+    <meta property="og:title" content="Products | Dr Pepper Concept" />
+    <meta property="og:description" content="Browse flavors, compare notes, and jump to a store near you." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+  </head>
+  <body class="h-full" data-page="products">
+    <div id="site-header"></div>
+    <main id="main-content" class="pb-12 pt-8">
+      <div class="container-narrow">
+        <header class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-wider text-brand-metallic">Catalog</p>
+          <h1 class="section-title mt-2">All flavors &amp; variants</h1>
+          <p class="mt-4 text-lg text-brand-muted">
+            Sensory-first descriptions, crisp hierarchy, and dual CTAs on every card for conversion without clutter.
+          </p>
+        </header>
+        <div id="product-grid" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list"></div>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
