@@ -2,6 +2,7 @@ import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  base: '/dr-pepper/',
   root: '.',
   publicDir: 'public',
   build: {
@@ -19,8 +20,4 @@ export default defineConfig({
       },
     },
   },
-})
-export default defineConfig({
-  base: '/dr-pepper/',
-  // ...existing config
 })
