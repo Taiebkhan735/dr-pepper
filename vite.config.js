@@ -1,8 +1,9 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
-export default defineConfig({
-  base: '/dr-pepper/',
+export default defineConfig(({ mode }) => ({
+  // GitHub Pages project site URL; dev uses '/' so `npm run dev` works at site root.
+  base: mode === 'production' ? '/dr-pepper/' : '/',
   root: '.',
   publicDir: 'public',
   build: {
@@ -20,4 +21,4 @@ export default defineConfig({
       },
     },
   },
-})
+}))
